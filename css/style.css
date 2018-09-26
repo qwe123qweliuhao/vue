@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+#app{
+    width: 1000px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+input{
+    margin: 5px 0;
+}
+#inp{
+    width: 500px;
+    height: 60px;
+    line-height: 100px;
+    border: 0;
+    font-size: 20px;
+}
+#inps{
+    width: 800px;
+    height: 80px;
+    line-height: 100px;
+    border: 0;
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    background: beige;
+}

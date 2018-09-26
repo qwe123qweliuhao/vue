@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <h1>笔记本</h1>
+    <input type="text" placeholder="请输入标题" id="inp">
+    <br>
+    <input
+            type="text"
+            id="inps"
+            :keyup.13="but"
+            placeholder="请输入内容">
+    <button @click="but">提交</button>
+    <ul>
+        <li v-for="(fun,index) in funs">
+            <textarea name="" id="text" cols="100" rows="10">
+                {{fun.text}}
+                {{fun.p}}
+            </textarea>
+            <span>{{fun.text.length+fun.p.length}}</span>
+            <button @click="del(index)">删除</button>
+        </li>
+    </ul>
+</div>
+
+<script src="json/data.json"></script>
+<script src="js-18-K/vue.js"></script>
+<script src="js-18-K/script-18-K.js"></script>
+</body>
+</html>
