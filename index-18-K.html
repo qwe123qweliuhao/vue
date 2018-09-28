@@ -15,7 +15,7 @@
             id="inps"
             :keyup.13="but"
             placeholder="请输入内容">
-    <button @click="but">提交</button>
+    <button @click="but">提|交</button>
     <ul>
         <li v-for="(fun,index) in funs">
             <textarea name="" id="text" cols="100" rows="10">
@@ -23,7 +23,7 @@
                 {{fun.p}}
             </textarea>
             <span>{{fun.text.length+fun.p.length}}</span>
-            <button @click="del(index)">删除</button>
+            <button @click="del(index)">删|除</button>
         </li>
     </ul>
 </div>
